@@ -1,0 +1,39 @@
+ import java.util.Scanner;
+
+public class ConsoleMenu {
+    public static void main(String[] args) {
+        System.out.println("Kumari Priya 079");
+
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("\n--- MENU ---");
+            System.out.println("1. Open File");
+            System.out.println("2. Save File");
+            System.out.println("3. About");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("You selected: Open File");
+                    break;
+                case 2:
+                    System.out.println("You selected: Save File");
+                    break;
+                case 3:
+                    System.out.println("This is a simulated Java Menu.");
+                    break;
+                case 4:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice.");
+            }
+        } while (choice != 4);
+
+        sc.close();
+    }
+}
